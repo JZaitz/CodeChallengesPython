@@ -26,7 +26,7 @@ def array_count9(nums):
   return counter
 
 #Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
-  def array_front9(nums):
+def array_front9(nums):
   end = len(nums)
   if end > 4:
     end = 4
@@ -37,14 +37,14 @@ def array_count9(nums):
   return False
 
 #Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
-  def array123(nums):
+def array123(nums):
   for i in range(len(nums)-2):
    if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
      return True
   return False
 
 #Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
-  def hello_name(name):
+def hello_name(name):
   return "Hello %s!" % name
 
 #Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
