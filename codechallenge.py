@@ -24,3 +24,21 @@ def array_count9(nums):
     if nums[i] == 9:
       counter = counter + 1
   return counter
+
+#Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+  def array_front9(nums):
+  end = len(nums)
+  if end > 4:
+    end = 4
+
+  for i in range(end):
+    if nums[i] == 9:
+      return True
+  return False
+
+#Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+  def array123(nums):
+  for i in range(len(nums)-2):
+   if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+     return True
+  return False
