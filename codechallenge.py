@@ -55,3 +55,14 @@ def make_abba(a, b):
 #The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
 def make_tags(tag, word):
   return "<" + tag + ">" + word + "</" + tag + ">"
+
+
+#Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of the out string, e.g. "<<word>>".
+
+
+def make_out_word(out, word):
+  outb = out[:2]
+  oute = out[2:]
+  return outb + word + oute
+
+  
