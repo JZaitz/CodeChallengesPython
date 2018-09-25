@@ -79,3 +79,8 @@ def first_two(str):
     return end
   else:
     return str[:1]
+
+#Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+def first_half(str):
+  midpoint = len(str)/2
+  return str[:midpoint]
