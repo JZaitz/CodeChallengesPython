@@ -88,3 +88,12 @@ def first_half(str):
 #Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
 def without_end(str):
   return str[1:-1]
+
+#Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).
+def combo_string(a, b):
+  alen = len(a)
+  blen = len(b)
+  if alen > blen:
+    return b + a + b
+  elif blen > alen:
+    return a + b + a
