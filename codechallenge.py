@@ -107,3 +107,9 @@ def left2(str):
   beg = str[:2]
   end = str[2:]
   return end + beg
+
+#Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
+def non_start(a, b):
+  newa = a[1:]
+  newb = b[1:]
+  return newa + newb
