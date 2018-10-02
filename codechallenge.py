@@ -113,3 +113,27 @@ def non_start(a, b):
   newa = a[1:]
   newb = b[1:]
   return newa + newb
+
+#Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
+def extra_end(str):
+  end = str[-2:]
+  return end * 3
+
+#Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
+def first_two(str):
+  if len(str) >= 2:
+    newstr = str[:2]
+    return newstr
+  elif len(str) == 1:
+    return str
+  else:
+    return str
+
+#Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+def first_half(str):
+  fhalf = len(str)/2
+  return str[:fhalf]
+
+#Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+def without_end(str):
+  return str[1:-1]
